@@ -21,12 +21,12 @@ function SelectedContact({ selectedContactId, setSelectedContactId}){
     <div className="contact">
     {contact ? (
       <div>
-      <h1>Contact Details</h1>
       <h2>{contact.name}</h2>
       <p>Username: {contact.username}</p>
       <p>Email: {contact.email}</p>
       <p>Phone: {contact.phone}</p>
       <p>Address: {contact.address.street}, {contact.address.city}, {contact.address.zipcode}</p>
+      <p>Coordinates: {contact.address.geo.lat}, {contact.address.geo.lng}</p>
       <p>Company: {contact.company.name}</p>
       <p>Website: {contact.website}</p>
     </div>
